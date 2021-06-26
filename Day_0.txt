@@ -1,15 +1,18 @@
 JS Introduction
 
 Question 1: Input and Output.
+--------------------------------
 
 var a =readLine()
 console.log("Hello", a);
 
 Question 2: var vs let vs const
+----------------------------------
 
 -10
 
 Question 3: Datatypes And Type Casting
+-----------------------------------------
 
 var a = readLine()
 var b=Number(a)
@@ -20,6 +23,7 @@ console.log(b+1);
 Flow Control
 
 Question 1: Comparision Operation & If-Else
+----------------------------------------------
 
 var num = readLine().trim();
 if(num>=90){
@@ -42,6 +46,7 @@ else{
 }
 
 Question 2: Switch Statement
+---------------------------------
 
 var num = parseInt(readLine().trim());
 switch(num){
@@ -71,6 +76,7 @@ switch(num){
 
 
 Question 3: Loops
+--------------------
 
 var num = parseInt(readLine().trim());
 for(i=0;i<=num;i++){
@@ -80,6 +86,7 @@ for(i=0;i<=num;i++){
 }
 
 Question 4: Jump Statements
+-------------------------------
 
 var num = parseInt(readLine().trim());
 for(i=0;i<=num;i++){
@@ -95,18 +102,21 @@ Numbers And Their Methods
 
 
 Question 1: Arithmetic Operations on Numbers
+-----------------------------------------------
 
 var n = parseInt(readLine().trim());
 console.log((n*n)+(n**3)-n);
 
 
 Question 2: Math methods in JS
+------------------------------------
 
 var num = parseInt(readLine().trim());
 var b=Math.log2(num)
 console.log(Math.round(b))
 
 Question 3: Bits and operations on it
+-----------------------------------------
 
 var num = parseInt(readLine().trim());
 console.log(~num);
@@ -117,6 +127,7 @@ Strings and strings Methods
 
 
 Question 1: JavaScript Strings
+---------------------------------
 
 var string = readLine().trim();
 var output = string+string.length
@@ -124,6 +135,7 @@ console.log(output);
 
 
 Question 2: String Methods
+--------------------------------
 
 var name = readLine().trim();
 var uppername = name.toUpperCase();
@@ -143,6 +155,7 @@ console.log(regpat.test(Str));
 Arrays and Objects
 
 Question 1: Arrays in JS
+----------------------------
 
 var size_ = parseInt(readLine().trim());
 var array_ = []
@@ -158,7 +171,7 @@ for(i=0; i<size_; i++){
 
 
 Question 2: Basic Array Methods
-
+-----------------------------------
 
 var size1 = parseInt(readLine().trim());
 var A = []
@@ -182,7 +195,7 @@ for(i=0;i<output.length;i++){
 
 
 Question 3: More Useful Array Methods
-
+------------------------------------------
 
 var size_ = parseInt(readLine().trim());
 var array_ = []
@@ -197,6 +210,7 @@ for(i=0;i<output.length;i++){
 
 
 Question 4: Map and Filter Methods
+------------------------------------
 
 var size_ = parseInt(readLine().trim());
 var A = []
@@ -218,8 +232,8 @@ for(i=0;i<C.length;i++){
 }
 
 
-Question 5: Js Objects (Worst formatting of this ques)
-
+Question 5: Js Objects
+------------------------
 
 /*
 var Stud = new Object();
@@ -244,7 +258,7 @@ else{
 Functions And Parameters
 
 Question 1: Functions in JS
-
+------------------------------
 
 var a = parseInt(readLine().trim());
 var b = parseInt(readLine().trim());
@@ -257,6 +271,7 @@ console.log(z);
 
 
 Question 2: Global Vs Local
+-------------------------------
 
 a) Scope determines the accessibility of variables, objects, and functions from different parts of the code.
 b) Function arguments (parameters) work as local variables inside functions.
@@ -264,8 +279,91 @@ c) We can use variables with same name inside multiple fucntions.
 
 
 Question 3: Nested Functions
+-------------------------------
 
 8
 
 --------------------------------------------------------------------------------------------------------------------------
 
+OOPs
+
+
+Question 1: Classes And Their Instances
+-----------------------------------------
+
+var defaultName = readLine();  
+var defaultPosition = readLine();
+var defaultSkill = readLine();
+
+class Employee{
+    constructor(name,position,skill){
+        this.name=name;
+        this.position=position;
+        this.skill=skill;
+    }
+}
+
+Question 2: Class Inheritance
+--------------------------------
+
+class A{
+    constructor(x, y){
+        this.x = x;
+        this.y = y;
+    }   
+}
+class B extends A{
+    constructor(x,y,z){
+        super(x,y);
+        this.z=z;
+    }
+    printIB(){
+        console.log("IB")
+    }
+
+}
+
+let x = readLine();
+let y = readLine();
+let z = readLine();
+
+
+
+Question 3: Polymorphism
+--------------------------
+
+class Shape{
+    area() {
+        return 0;
+        
+    }
+    print() {
+        console.log("This is a shape.");
+    }
+}
+
+class Square extends Shape{
+    constructor(s) {
+        super();
+        this.s = s;
+    }
+    area(){
+        return s*s;
+        
+    }
+}
+
+class Rectangle extends Shape{
+    constructor(l, b) {
+        super();
+        this.l = l;
+        this.b = b;
+    }
+
+    area() {
+        return l*b;
+    }
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------
