@@ -140,4 +140,106 @@ console.log(regpat.test(Str));
 
 --------------------------------------------------------------------------------------------------------------------
 
+Arrays and Objects
+
+Question 1: Arrays in JS
+
+var size_ = parseInt(readLine().trim());
+var array_ = []
+for(var i = 0 ; i < size_; i++ ){
+    var x = parseInt(readLine().trim());
+    array_.push(x);
+}
+var new_array = []
+for(i=0; i<size_; i++){
+    new_array.push(array_[i]+i);
+    console.log(new_array[i])
+}
+
+
+Question 2: Basic Array Methods
+
+
+var size1 = parseInt(readLine().trim());
+var A = []
+for(var i = 0 ; i < size1; i++ ){
+    var x = parseInt(readLine().trim());
+    A.push(x);
+}
+var size2 = parseInt(readLine().trim());
+var B = []
+for(var i = 0 ; i < size2; i++ ){
+    var x = parseInt(readLine().trim());
+    B.push(x);
+}
+
+a1=A.shift();
+var b1=B.push(a1);
+var output = A.concat(B);
+for(i=0;i<output.length;i++){
+    console.log(output[i]);
+}
+
+
+Question 3: More Useful Array Methods
+
+
+var size_ = parseInt(readLine().trim());
+var array_ = []
+for(var i = 0 ; i < size_; i++ ){
+    var x = parseInt(readLine().trim());
+    array_.push(x);
+}
+var output = array_.sort(function(a,b){return a-b});
+for(i=0;i<output.length;i++){
+    console.log(output[i])
+}
+
+
+Question 4: Map and Filter Methods
+
+var size_ = parseInt(readLine().trim());
+var A = []
+for(var i = 0 ; i < size_; i++ ){
+    var x = parseInt(readLine().trim());
+    A.push(x);
+}
+var B = A.map(func)
+function func(num){
+    return num*2;
+}
+var C = B.filter(func1)
+function func1(i){
+    if(i%8==0)
+    return i;
+}
+for(i=0;i<C.length;i++){
+    console.log(C[i])
+}
+
+
+Question 5: Js Objects (Worst formatting of this ques)
+
+
+/*
+var Stud = new Object();
+Stud.Maths = parseInt(readLine().trim());
+Stud.Physics = parseInt(readLine().trim());
+Stud.Chemistry = parseInt(readLine().trim());
+*/
+
+if(Stud.Maths>Stud.Physics && Stud.Maths>Stud.Chemistry){
+    console.log("Maths");
+}
+else if(Stud.Physics>Stud.Maths && Stud.Physics>Stud.Chemistry){
+    console.log("Physics");
+}
+else{
+    console.log("Chemistry");
+}
+
+
+-------------------------------------------------------------------------------------------------------
+
+
 
