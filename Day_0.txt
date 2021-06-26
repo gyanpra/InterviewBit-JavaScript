@@ -1,0 +1,46 @@
+JS Introduction
+
+Question 1: Input and Output.
+
+var a =readLine()
+console.log("Hello", a);
+
+Question 2: var vs let vs const
+
+-10
+
+Question 3: Datatypes And Type Casting
+
+var a = readLine()
+var b=Number(a)
+console.log(b+1);
+
+Flow Control
+
+Question 1: Comparision Operation & If-Else
+
+var num = readLine().trim();
+if(num>=90){ console.log("A"); } else if(num>=80){ console.log("B"); } else if(num>=70){ console.log("C"); } else if(num>=60){ console.log("D"); } else if(num>=50){ console.log("E"); } else{ console.log("F") }
+
+Question 2: Switch Statement
+
+var num = parseInt(readLine().trim()); switch(num){ case 1: console.log("Monday"); break; case 2: console.log("Tuesday"); break; case 3: console.log("Wednesday"); break; case 4: console.log("Thursday"); break; case 5: console.log("Friday"); break; case 6: console.log("Saturday"); break; default: console.log("Sunday"); break; }
+
+Question 3: Loops
+
+var num = parseInt(readLine().trim());
+for(i=0;i<=num;i++){
+  if(i%2!=0){
+    console.log(i);
+    }
+}
+
+Question 4: Jump Statements
+
+var num = parseInt(readLine().trim());
+for(i=0;i<=num;i++){
+  if(i%2==0){
+    continue;
+    }
+    console.log(i);
+}
