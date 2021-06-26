@@ -367,3 +367,42 @@ class Rectangle extends Shape{
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+Extras
+
+Question 1: Math Object
+--------------------------
+
+var radius = parseInt(readLine().trim());
+var volume=(4*(Math.PI)*(radius**3))/3;
+console.log(Math.ceil(volume));
+
+
+Question 2: Regular vs Arrow Functions
+------------------------------------------
+
+100
+
+
+Question 3: Recursion
+-----------------------
+
+var n = parseInt(readLine().trim());
+function fib(n, m) {
+  if (n < 2) {
+    return n;
+  }
+  if(!m[n]) {
+    m[n] = fib(n - 1, m) + fib(n - 2, m);
+  }
+  return m[n];
+}
+console.log(fib(n, {}));
+
+
+Question 4: Palindromic Check
+---------------------------------
+
+
+
+
