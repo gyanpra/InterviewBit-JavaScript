@@ -86,3 +86,23 @@ for(i=0;i<=num;i++){
     }
     console.log(i);
 }
+
+Numbers And Their Methods
+
+
+Question 1: Arithmetic Operations on Numbers
+
+var n = parseInt(readLine().trim());
+console.log((n*n)+(n**3)-n);
+
+
+Question 2: Math methods in JS
+
+var num = parseInt(readLine().trim());
+var b=Math.log2(num)
+console.log(Math.round(b))
+
+Question 3: Bits and operations on it
+
+var num = parseInt(readLine().trim());
+console.log(~num);
