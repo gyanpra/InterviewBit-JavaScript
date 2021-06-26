@@ -241,5 +241,31 @@ else{
 
 -------------------------------------------------------------------------------------------------------
 
+Functions And Parameters
 
+Question 1: Functions in JS
+
+
+var a = parseInt(readLine().trim());
+var b = parseInt(readLine().trim());
+var c = parseInt(readLine().trim());
+function myFunction(a,b,c){
+    return a*b*c;
+}
+var z = myFunction(a,b,c);
+console.log(z);
+
+
+Question 2: Global Vs Local
+
+a) Scope determines the accessibility of variables, objects, and functions from different parts of the code.
+b) Function arguments (parameters) work as local variables inside functions.
+c) We can use variables with same name inside multiple fucntions.
+
+
+Question 3: Nested Functions
+
+8
+
+--------------------------------------------------------------------------------------------------------------------------
 
